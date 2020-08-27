@@ -23,11 +23,16 @@ Name of the image. Should be specified without domain and project.
 
 Image tag to set for the built image.
 
+### `gcr_project_id`
+GCP project id
+
 ## Required Environment Variables
 
 ### `GCLOUD_SERVICE_KEY`
 
 Service key to use for GCR authentication
+
+
 
 ## Example usage
 

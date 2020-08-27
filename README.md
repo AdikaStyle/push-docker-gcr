@@ -29,10 +29,6 @@ Image tag to set for the built image.
 
 Service key to use for GCR authentication
 
-### `GOOGLE_PROJECT_ID`
-
-Project id. Used in combination with GCR endpoint to build full docker image.
-
 ## Example usage
 
 ```ylm

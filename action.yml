@@ -13,6 +13,9 @@ inputs:
   image_tag:
     description: 'Docker Image Tag'
     required: true
+  gcr_project_id:
+    description: 'google project Id'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'

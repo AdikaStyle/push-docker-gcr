@@ -32,7 +32,7 @@ Service key to use for GCR authentication
 ## Example usage
 
 ```ylm
-uses: raccoondev/push-docker-gcr
+uses: adikastyle/push-docker-gcr@master
 env:
   GCLOUD_SERVICE_KEY: ${{ secrets.GCLOUD_SERVICE_KEY }}
 with:

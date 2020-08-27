@@ -37,11 +37,12 @@ Project id. Used in combination with GCR endpoint to build full docker image.
 
 ```ylm
 uses: raccoondev/push-docker-gcr
+env:
+  GCLOUD_SERVICE_KEY: ${{ secrets.GCLOUD_SERVICE_KEY }}
 with:
   gcr_host: eu.gcr.io
-  image_name: my_image
+  image_name: data-service-template
   image_tag: latest
-  env:
-    GCLOUD_SERVICE_KEY: ${{ secrets.GCLOUD_SERVICE_KEY }}
-    GOOGLE_PROJECT_ID: ${{ secrets.GOOGLE_PROJECT_ID }}
+  gcr_project_id: adikastyle-dev
+
 ```

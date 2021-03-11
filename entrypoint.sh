@@ -7,7 +7,8 @@ echo -n $GCLOUD_SERVICE_KEY | docker login -u _json_key --password-stdin https:/
 
 #cd $INPUT_WORKING_DIR
 
-ls -la /github/home
+echo $GITHUB_WORKSPACE
+cd $GITHUB_WORKSPACE
 
 docker build -t $IMAGE_NAME .
 docker push $IMAGE_NAME
